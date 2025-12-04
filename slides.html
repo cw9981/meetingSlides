@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Business Review 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- 左側導航區域 -->
+        <div class="nav-area left-nav" id="prev-slide">
+            <div class="nav-arrow">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="nav-label">上一頁</div>
+        </div>
+        
+        <!-- 簡報內容區域 -->
+        <div class="slides-container" id="slides-container">
+            <!-- 第一頁(固定) -->
+            <div class="slide active" id="slide-0">
+                <div class="slide-header">
+                    <div class="company-info">
+                        <div class="company-logo">
+                            <img src="assets/company-logo.png" alt="公司標誌" id="company-logo" onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iNjAiIGN5PSI2MCIgcj0iNTAiIGZpbGw9IiMzNDk4REIiLz48cGF0aCBkPSJNNjAgMzBDNDguMDY1IDMwIDM4LjUgMzkuNTY1IDM4LjUgNTEuNUMzOC41IDYzLjQzNSA0OC4wNjUgNzMgNjAgNzNDNzEuOTM1IDczIDgxLjUgNjMuNDM1IDgxLjUgNTEuNUM4MS41IDM5LjU2NSA3MS45MzUgMzAgNjAgMzBaTTc1IDU0SDUyLjVWNjYuNUg3NVY1NFpNNTIgNTRINDIuNVY2Ni41SDUyVjU0WiIgZmlsbD0id2hpdGUiLz48L3N2Zz4=';">
+                        </div>
+                        <div class="company-details">
+                            <h3 id="company-name">PAPAGO Corporation</h3>
+                            <p id="company-tagline">Face8 台灣臉霸</p>
+                        </div>
+                    </div>
+                    <div class="presentation-info">
+                        <p><i class="far fa-clock"></i> <span id="presentation-time">2025年第一季度</span></p>
+                        <p><i class="far fa-user"></i> <span id="presenter-name">張經理</span></p>
+                    </div>
+                </div>
+                
+                <div class="slide-content title-slide">
+                    <div class="title-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h1 id="main-title">Staff Business Review 2025</h1>
+                    <h2 id="sub-title">員工業務回顧 2025</h2>
+                    <div class="title-divider"></div>
+                    <p class="subtitle" id="presentation-subtitle">年度績效與業務發展分析</p>
+                    
+                    <div class="title-footer">
+                        <p><i class="far fa-calendar-alt"></i> 最後更新: <span id="last-update">2025年1月15日</span></p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span id="location">台北總公司會議廳</span></p>
+                    </div>
+                </div>
+                
+                <div class="slide-footer">
+                    <div class="page-indicator">第 <span class="current-page">1</span> 頁，共 <span class="total-pages">1</span> 頁</div>
+                </div>
+            </div>
+            
+            <!-- 其餘頁面將由JavaScript動態生成 -->
+        </div>
+        
+        <!-- 右側導航區域 -->
+        <div class="nav-area right-nav" id="next-slide">
+            <div class="nav-arrow">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="nav-label">下一頁</div>
+        </div>
+        
+        <!-- 進度指示器 -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        
+        <!-- 全屏控制按鈕 -->
+        <div class="fullscreen-controls">
+            <button class="fullscreen-btn" id="fullscreen-toggle" title="切換全屏 (F)">
+                <i class="fas fa-expand"></i>
+                <span class="btn-text">全屏</span>
+            </button>
+            <div class="fullscreen-hint">
+                按 <span class="key">F</span> 進入全屏，<span class="key">ESC</span> 或 <span class="key">Enter</span> 退出
+            </div>
+        </div>
+    </div>
+    
+    <!-- 鍵盤快捷鍵提示 -->
+    <div class="keyboard-hint">
+        <p>使用 <span class="key"><i class="fas fa-arrow-left"></i> 左鍵</span> 和 <span class="key"><i class="fas fa-arrow-right"></i> 右鍵</span> 或 <span class="key">空白鍵</span> 導覽</p>
+        <p>按 <span class="key">F</span> 進入全屏，<span class="key">ESC</span> 或 <span class="key">Enter</span> 退出</p>
+    </div>
+    
+    <!-- 全屏模式提示 -->
+    <div class="fullscreen-exit-hint" id="fullscreen-exit-hint">
+        <div class="hint-content">
+            <p>按 <span class="key">ESC</span> 或 <span class="key">Enter</span> 鍵退出全屏</p>
+            <p class="hint-note">或點擊右上角 <i class="fas fa-compress"></i> 按鈕</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
