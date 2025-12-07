@@ -55,12 +55,12 @@
                 {
                 "title": "技術升級",
                 "subitems": [
-                    "評估並導入新一代 AI 編程輔助工具（如 Cursor、GitHub Copilot、Google Gemini CLI），優化開發流程與效率",
+                    "評估並導入新一代 AI 編程輔助工具（如 Cursor、GitHub Copilot、Google Gemini Code Assist），優化開發流程與效率",
                     "評估採用 Kotlin Multiplatform 技術，作為新行動專案的跨平台開發方案"
                 ]
                 },
                 {
-                "title": "人才發展",
+                "title": "發展",
                 "subitems": [
                     "強化團隊成員在 UX 設計與開發面向的整合能力與敏銳度",
                     "評估導入新世代高性價比運算設備（含伺服器與邊緣裝置），以支援高效能需求場景"
